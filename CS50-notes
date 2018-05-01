@@ -1,4 +1,4 @@
-Week 0
+WEEK 0:
 
 Functions - verbs, english-like syntax like call, email, flip
 Boolean expressions - a query that can be answered w yes/no
@@ -8,14 +8,131 @@ Variables
 Threads
 Events
 
-Week 1:
+#####################################################################################################################
+#####################################################################################################################
+
+WEEK 1:
 
 Learning patterns across the programming languages.
+Comparing Scratch the image based coding language, to C the grandfather of programming languages.
 
-printf(“hello, world\n”);
-
-________
+i.
+===================================================
 
 #include <stdio.h>
 
-Int 
+int main(void)
+{
+              printf("hello, world\n");
+}
+
+===================================================
+
+-----------------------
+- from the above eg. -
+-----------------------
+
+main = when green flag clicked in scratch
+
+printf = action /verb in this case telling smth to print something
+
+"hello, world\n" = the text that you want printed  ---> this bit is being supplied to printf
+^  we call this a string. 
+
+<stdio.h> = this stands for Standard Input and Output 
+#include = asking the program to include standard input and output
+
+
+** command promts u can type into terminal **
+\n    is to indicate a new line, like as though hitting enter.
+-o    is to indicate output
+so -o hello   is asking the machine to output a file called hello
+and -o hello hello.c is asking the machine output the hello.c file as hello
+pset/   is a folder named pset
+ls    command to list the items in the area it is typed into
+cd    like double clicking and opening something
+cd .. asking you to go back one/up
+rmdir   remove directory
+%s   put a string here
+
+ii.
+====================================================
+
+while(true)
+{
+    printf("hello, world\n");
+}
+
+====================================================
+-----------------------
+- from the above eg. -
+-----------------------
+
+while(true) = forever loop block from Scratch
+
+it will keep activating the function placed within the parentheses {}
+
+
+iii.
+====================================================
+
+for (int i=0; i <50; i++)
+{
+     printf("hello, world\n");
+}
+
+====================================================
+for (int i=0; i <50; i++) = repeat 50 times pluggged in function 50 times
+
+int i=0  --->  give me a variable and make the integar equals 0 by default.
+i < 50 ---> asking the program is the value of i is less than 50 if it is less, it will move on to the next bit
+i++ ----> counting the number of times the function has been repeated, each time it repeats, 'i' will plus 1 it will 
+keep repeating the function until it hits 50.
+
+
+
+iv.
+writing 
+
+source code(human-like language)----> compilers(translating source code into machine code)----> machine code
+IDE : Itegrated Development Environment a cmputing evironment that is identical for all.
+always use lower case and no spaces.
+
+v.
+--------------
+ C data types
+--------------
+strings | data strings of text / data ------ s  %s  get_string
+integars  | whole numbers -------- int i %i  get_int
+floats |  numbers that allow periods -------- f %f  get_float  %.10f(get numbers with 10 decimal places)
+char   |  single character  -------> char get_char
+=  | used for assignments
+==  | equality like an arithmatic
+'  | single uotes for single character
+"   | double quotes for strings
+||   | two verticle bars for or
+switch | different cases different variables and options on which you make decisions
+break  | use with switch because they don't have the parentheses, so you have to tell the machine where
+to stop reading the code to implement the funtion it was meant for. like the stop this script n scratch
+
+
+deciding between using or / else if   using or is better because u'll be writing less code so 
+less chances of mistakes, cleaner and you won't have to repeat yourself.
+
+----------------
+Custom function
+----------------
+
+int square(int n)
+{
+    return n*n;
+    
+    }
+
+making your own functions even when your programming language doesn't suport squaring a number
+here you are tellling the machine it takes as input from within the parentheses one value that you refer 
+to as n and execute the line of code n*n and gives you the resultant value(returns it to you, like a dog 
+playing who fetches your slippers) the int at the front tells you that it's input value is an integer
+
+
+
