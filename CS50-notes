@@ -1,0 +1,21 @@
+Week 0
+
+Functions - verbs, english-like syntax like call, email, flip
+Boolean expressions - a query that can be answered w yes/no
+Conditions - defining the fork in the road, if, else
+Loops
+Variables
+Threads
+Events
+
+Week 1:
+
+Learning patterns across the programming languages.
+
+printf(“hello, world\n”);
+
+________
+
+#include <stdio.h>
+
+Int 
