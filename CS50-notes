@@ -32,15 +32,14 @@ int main(void)
 - from the above eg. -
 -----------------------
 
-main = when green flag clicked in scratch
+main | when green flag clicked in scratch
 
-printf = action /verb in this case telling smth to print something
-
-"hello, world\n" = the text that you want printed  ---> this bit is being supplied to printf
+printf() | print formatted, used to print plugged in values into the output screen
+*scanf() | scan formatted, used to scan what is input into the program
+"hello, world\n" | the text that you want printed  ---> this bit is being supplied to printf
 ^  we call this a string. 
-
-<stdio.h> = this stands for Standard Input and Output 
-#include = asking the program to include standard input and output
+<stdio.h> | this stands for Standard Input and Output, the header file in C language.
+#include | asking the program to include standard input and output
 
 
 ** command promts u can type into terminal **
@@ -54,6 +53,7 @@ cd    like double clicking and opening something
 cd .. asking you to go back one/up
 rmdir   remove directory
 %s   put a string here
+control c | to stop a program running in case the terminal freaks out.
 
 ii.
 ====================================================
@@ -105,6 +105,7 @@ v.
 strings | data strings of text / data ------ s  %s  get_string
 integars  | whole numbers -------- int i %i  get_int
 floats |  numbers that allow periods -------- f %f  get_float  %.10f(get numbers with 10 decimal places)
+has a decimal precision of 7 digits.
 char   |  single character  -------> char get_char
 =  | used for assignments
 ==  | equality like an arithmatic
@@ -114,7 +115,7 @@ char   |  single character  -------> char get_char
 switch | different cases different variables and options on which you make decisions
 break  | use with switch because they don't have the parentheses, so you have to tell the machine where
 to stop reading the code to implement the funtion it was meant for. like the stop this script n scratch
-
+double | for values that include numbers with decimals and without, has decima precision of 15 digits.
 
 deciding between using or / else if   using or is better because u'll be writing less code so 
 less chances of mistakes, cleaner and you won't have to repeat yourself.
@@ -134,5 +135,39 @@ here you are tellling the machine it takes as input from within the parentheses 
 to as n and execute the line of code n*n and gives you the resultant value(returns it to you, like a dog 
 playing who fetches your slippers) the int at the front tells you that it's input value is an integer
 
+===========================================
 
+int main(void)
+{
+
+  do 
+  {
+     int n=get_int("Positive number: ");
+  }
+  while (n<=0);
+  
+  for (int i=0; i<n; i++)
+  {
+       printf("?");
+  }
+  printf("/n");
+}
+===========================================
+
+int main(void)
+{
+
+  do 
+  {
+     int n=get_int("Number: ");
+  }
+  while (n<=0);
+  
+  for (int i=0; i<n; i++)
+  {
+       printf("?");
+  }
+  printf("/n");
+}
+=============================================
 
