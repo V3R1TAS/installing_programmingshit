@@ -22,7 +22,7 @@ int main(void)
         {
             printf(" ");
         }
-        // number of pricks needed for body of left-pyramid
+        // number of bricks needed for body of left-pyramid
         for (bricks = 0; bricks < row_num + 1; bricks++)
         {
             printf("#");
