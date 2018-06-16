@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+    int height;
+    do
+    {
+        // Prompt user for the height of the pyramid
+        height = get_int("Positive Number: ");
+    }
+    while (height < 0 || height > 23);
+
+    int row_num, spaces, bricks;
+
+
+    // for the number of rows needed for height of pyramid
+    for (row_num = 0; row_num < height; row_num ++)
+    {
+        // number of spaces needed to align left-pyramid to the right
+        for (spaces = 0; spaces < height - row_num - 1; spaces++)
+        {
+            printf(" ");
+        }
+        // number of pricks needed for body of left-pyramid
+        for (bricks = 0; bricks < row_num + 1; bricks++)
+        {
+            printf("#");
+        }
+        // fixed width of the gap between the two pyramids
+        printf("  ");
+        // number of bricks needed for the body of the right-pyramid
+        for (bricks = 0; bricks < row_num + 1; bricks++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+
+}
